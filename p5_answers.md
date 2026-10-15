@@ -14,4 +14,9 @@
 
 예측이 틀린 문제가 있으면 번호와 이유를 한 줄씩 적습니다. 다 맞았으면 "모두 맞음" 이라고 적습니다.
 
-- 
+- 모두 맞음. 브라우저에서 계산된 글자색과 글자 크기로 확인했습니다.
+- 1 — `#star`는 id 선택자여서 `.note`와 `p`보다 우선합니다. 결과: green.
+- 2 — `.tip.big`은 class 두 개를 사용하므로 나중의 `.tip`보다 우선합니다. 결과: orange.
+- 3 — `.urgent`와 `.memo`의 우선순위가 같아서 CSS에서 나중에 나온 `.memo`가 이깁니다. HTML의 class 순서는 영향을 주지 않습니다. 결과: gray.
+- 4 — 색은 `.info`의 `!important`가 이겨 blue입니다. 크기에는 `!important`가 없으므로 id 선택자 `#panel`이 이겨 20px입니다.
+- 5 — 인라인 `style="color: purple;"`이 일반 id 선택자 `#hero`보다 우선합니다. 결과: purple.
