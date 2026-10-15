@@ -30,3 +30,19 @@ td {
 #title {
   text-align: center;
 }
+
+#wrapper {
+  width: 640px;
+  max-width: calc(100% - 64px);
+  background: white;
+  margin: 24px auto;
+  padding: 28px;
+  border-radius: 10px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
